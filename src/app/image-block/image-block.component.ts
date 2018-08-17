@@ -8,11 +8,4 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ImageBlockComponent {
   @Input() childImage: string;
 
-  imgSource: string = '../../assets/img/' + this.childImage;
-
-  constructor(){
-    console.log(this.childImage);
-    console.log(this.imgSource);
-  }
-
 }
