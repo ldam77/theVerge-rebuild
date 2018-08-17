@@ -1,0 +1,13 @@
+.header {
+  background-image: url(https://cdn.vox-cdn.com/uploads/chorus_asset/file/12185013/boltHeader.0.jpg);
+  text-align: center;
+  color: white;
+  height: 300px;
+  padding-bottom: 64px;
+  padding-top: 64px;
+  border-bottom: 1px solid #333333;
+}
+
+h1 {
+  font-size: 5em;
+}
