@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { StoryBlockComponent } from './story-block/story-block.component';
+import { ImageBlockComponent } from './image-block/image-block.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { StoryBlockComponent } from './story-block/story-block.component';
     AppComponent,
     TitleBarComponent,
     NavBarComponent,
-    StoryBlockComponent
+    StoryBlockComponent,
+    ImageBlockComponent
   ],
   imports: [
     BrowserModule
