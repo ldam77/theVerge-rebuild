@@ -7,7 +7,12 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ImageBlockComponent {
   @Input() childImage: string;
-  console.log(childImage);
-  imgSource = '../../assets/img/' + this.childImage;
-  console.log(imgSource);
+
+  imgSource: string = '../../assets/img/' + this.childImage;
+
+  constructor(){
+    console.log(this.childImage);
+    console.log(this.imgSource);
+  }
+
 }
