@@ -1,6 +1,19 @@
 # TheVergeRebuild
 
+#### A rebuild of The Verge website using Angular.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+
+#### By _Lan Dam, 08/17/2018_
+
+## Description
+
+TheVergeRebuild is a remake of The Verge website using Angular.  The Verge is a site about technology news and new hardware reviews.
+The Verge original website can be found at www.theverge.com
+
+## Setup
+
+Download or clone the repository to install TheVergeRebuild
 
 ## Development server
 
@@ -25,3 +38,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+For any other questions or support details, please email: ldam77@yahoo.com
+
+## Technology Used
+
+Application: Angular, TypeScript
+
+### Legal
+
+Copyright (c) 2018 **Lan Dam**
+
+This software is licensed under the MIT license.
