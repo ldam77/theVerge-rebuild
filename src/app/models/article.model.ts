@@ -1,3 +1,3 @@
 export class Article {
-  constructor(public name:string, public author: string, public imageLink: string) { }
+  constructor(public title:string, public author: string, public imageLink: string) { }
 }
