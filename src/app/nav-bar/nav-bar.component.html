@@ -1,3 +1,20 @@
-<p>
-  nav-bar works!
-</p>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">Tech</a>
+
+      <button type="button" class="navbar-toggle" (click)="onToggleMenu()">
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <div class="collapse" [ngClass]="{ 'toggleMenuStyle' : toggleMenu === true }">
+      <ul class="nav navbar-nav">
+        <li> <a href="#">Apple</a> </li>
+        <li> <a href="#">Google</a> </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
