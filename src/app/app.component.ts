@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Article } from './models/article.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  group1: Article[] = [new Article("Samsung Galaxy Note 9 review: more, more, more", "Dan Seifert", "note9.jpg"), new Article("NASA is prepared if a battery ever explodes in space", "Loren Grush", "nasa.jpg")];
+
 }
