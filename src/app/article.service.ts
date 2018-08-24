@@ -5,13 +5,18 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 @Injectable()
 export class ArticleService {
   articles: FirebaseListObservable<any[]>;
+  articlesArray: Article[];
 
   constructor(private database: AngularFireDatabase) {
     this.articles = database.list('articles');
   }
 
   getArticles() {
-    return this.articles;
+    this.articles.subscribe(dataLastEmittedFromObserver => {
+     this.articlesArray = dataLastEmittedFromObserver;
+     console.log(this.articlesArray);
+   });
+    return this.articlesArray;
   }
 
   getArticleById(articleId: string) {

@@ -2,7 +2,7 @@
     "title": "Samsung Galaxy Note 9 review: more, more, more",
     "author": "Dan Seifert",
     "imageLink": "note9.jpg",
-    "tag": ["Tech", "Android", "Mobile", "Reviews"],
+    "tag": ["Tech", "Google", "Mobile", "Reviews"],
     "body": "Samsung’s Galaxy Note phones have always been about more. More screen, more battery, more specs, more power, more features; if you want more of something, the Note is the phone to get. It’s a phone designed and built for the power user who won’t settle for anything less."
   }, {
     "title": "NASA is prepared if a battery ever explodes in space",
@@ -40,5 +40,11 @@
     "imageLink": "neural.jpg",
     "tag": ["The Interface", "Facebook", "US & World"],
     "body": "It’s been a big week for tales of content moderation. Last Friday, Radiolab posted a fascinating episode about Facebook’s evolving approach to deciding what stays on the platform. The episode used a series of historical debates inside the company to illuminate the many challenges faced by a company seeking to regulate speech globally."
+  }, {
+    "title": "Google adds Xbox One controller support to Android Pie",
+    "author": "Tom Warren",
+    "imageLink": "controller.jpg",
+    "tag": ["Microsoft", "Google", "Gaming", "Circuit Breaker"],
+    "body": "Microsoft’s Xbox One controllers haven’t always worked well with Android. While Microsoft added Bluetooth to the Xbox One controllers two years ago, a number of games have had issues with button mapping. Google is now officially supporting Xbox One controllers with Bluetooth in its latest Android Pie release. XDA-Developers reports that a Google engineer has closed a long standing bug report on the Xbox One controller mapping issues, noting that they’re fixed in Android Pie."
   }]
 }

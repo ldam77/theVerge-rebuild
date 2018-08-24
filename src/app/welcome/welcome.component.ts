@@ -11,19 +11,20 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [ArticleService]
 })
 export class WelcomeComponent implements OnInit {
-  articles: FirebaseListObservable<any[]>;
+  articles: Article[];
 
   constructor(private router: Router, private articleService: ArticleService) { }
 
   ngOnInit() {
     this.articles = this.articleService.getArticles();
+    console.log(this.articles);
   }
 
   goToArticlePage(clickedArticle) {
     this.router.navigate(['articles', clickedArticle.$key]);
   };
 
-  img1: string = "../../assets/img/" + this.articles[0].imageLink;
-  img2: string = "../../assets/img/" + this.articles[1].imageLink;
+  // img1: string = "../../assets/img/" + this.articles[0].imageLink;
+  // img2: string = "../../assets/img/" + this.articles[1].imageLink;
 
 }
