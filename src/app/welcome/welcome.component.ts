@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Article } from './../models/article.model';
 import { ArticleService} from './../article.service';
 import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-welcome',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
   providers: [ArticleService]
 })
 export class WelcomeComponent implements OnInit {
-  articles: Article[];
+  articles: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private articleService: ArticleService) { }
 
@@ -18,8 +19,8 @@ export class WelcomeComponent implements OnInit {
     this.articles = this.articleService.getArticles();
   }
 
-  goToArticlePage(clickedArticle: Article) {
-    this.router.navigate(['articles', clickedArticle.id]);
+  goToArticlePage(clickedArticle) {
+    this.router.navigate(['articles', clickedArticle.$key]);
   };
 
   img1: string = "../../assets/img/" + this.articles[0].imageLink;

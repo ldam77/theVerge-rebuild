@@ -1,16 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Article } from './models/article.model';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class ArticleService {
-  article: Article;
-  constructor() { }
+  articles: FirebaseListObservable<any[]>;
+
+  constructor(private database: AngularFireDatabase) {
+    this.articles = database.list('articles');
+  }
 
   getArticles() {
-    return [];
+    return this.articles;
   }
 
   getArticleById(articleId: string) {
-    return this.article;
+    return this.database.object('albums/' + articleId);
   }
 }

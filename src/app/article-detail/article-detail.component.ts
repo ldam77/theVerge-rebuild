@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Article } from '../models/article.model';
 import { ArticleService } from '../article.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-article-detail',
@@ -12,7 +13,7 @@ import { ArticleService } from '../article.service';
 })
 export class ArticleDetailComponent implements OnInit {
   articleId: string;
-  articleToDisplay: Article;
+  articleToDisplay;
 
   constructor(private route: ActivatedRoute,
     private location: Location,
