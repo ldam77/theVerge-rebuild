@@ -17,7 +17,8 @@ import { routing } from './app.routing';
     TitleBarComponent,
     NavBarComponent,
     StoryBlockComponent,
-    ImageBlockComponent
+    ImageBlockComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule
