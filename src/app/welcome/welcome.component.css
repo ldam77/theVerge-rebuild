@@ -9,3 +9,19 @@
 .full-span {
   background-image: linear-gradient(to right, gold, magenta);
 }
+
+img {
+  width: 100%;
+}
+
+.story {
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.author {
+  color: magenta;
+}

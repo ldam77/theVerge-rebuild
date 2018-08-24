@@ -12,13 +12,18 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class WelcomeComponent implements OnInit {
   articles: Article[];
+  img1: string;
+  img2: string;
+  img3: string;
 
   constructor(private router: Router, private articleService: ArticleService) { }
 
   ngOnInit() {
     this.articleService.getArticles().subscribe(dataLastEmittedFromObserver => {
      this.articles = dataLastEmittedFromObserver;
-     console.log(this.articles);
+     this.img1 = "../../assets/img/" + this.articles[0].imageLink;
+     this.img2 = "../../assets/img/" + this.articles[1].imageLink;
+     this.img3 = "../../assets/img/" + this.articles[2].imageLink;
    });
 
   }
@@ -26,8 +31,5 @@ export class WelcomeComponent implements OnInit {
   goToArticlePage(clickedArticle) {
     this.router.navigate(['articles', clickedArticle.$key]);
   };
-
-  // img1: string = "../../assets/img/" + this.articles[0].imageLink;
-  // img2: string = "../../assets/img/" + this.articles[1].imageLink;
 
 }

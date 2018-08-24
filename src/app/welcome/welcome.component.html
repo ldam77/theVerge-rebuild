@@ -1,43 +1,64 @@
 <div class="story-block">
   <div class="row">
     <div class="col-md-4">
-      <app-image-block [childImage]="img1"></app-image-block>
+      <img src="{{img1}}" alt="">
     </div>
     <div class="col-md-4">
-      <app-story-block [childStory]="articles[0]"></app-story-block>
+      <div class="story">
+        <h1>{{articles[0].title}}</h1>
+        <h5>BY <span class="author">{{articles[0].author}}</span> </h5>
+      </div>
     </div>
     <div class="col-md-4">
-
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-4">
-
-    </div>
-    <div class="col-md-4">
-      <app-story-block [childStory]="articles[1]"></app-story-block>
-    </div>
-    <div class="col-md-4">
-      <app-image-block [childImage]="img2"></app-image-block>
+      <div class="story">
+        <h1>{{articles[3].title}}</h1>
+        <h5>BY <span class="author">{{articles[3].author}}</span> </h5>
+      </div>
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-4">
+      <div class="story">
+        <h1>{{articles[1].title}}</h1>
+        <h5>BY <span class="author">{{articles[1].author}}</span> </h5>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <img src="{{img2}}" alt="">
+    </div>
+    <div class="col-md-4">
+      <div class="story">
+        <h1>{{articles[4].title}}</h1>
+        <h5>BY <span class="author">{{articles[4].author}}</span> </h5>
+      </div>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-md-4">
+      <div class="story">
+        <h1>{{articles[5].title}}</h1>
+        <h5>BY <span class="author">{{articles[5].author}}</span> </h5>
+      </div>
     </div>
     <div class="col-md-4">
-      <app-story-block [childStory]="articles[1]"></app-story-block>
+      <div class="story">
+        <h1>{{articles[2].title}}</h1>
+        <h5>BY <span class="author">{{articles[1].author}}</span> </h5>
+      </div>
     </div>
     <div class="col-md-4">
-      <app-image-block [childImage]="img1"></app-image-block>
+      <img src="{{img3}}" alt="">
     </div>
   </div>
 
   <div class="row full-span">
     <div class="col-md-6">
-      <app-story-block [childStory]="articles[1]"></app-story-block>
+      <div class="story">
+        <h1>{{articles[6].title}}</h1>
+        <h5>BY <span class="author">{{articles[6].author}}</span> </h5>
+      </div>
     </div>
     <div class="col-md-6">
 
