@@ -9,6 +9,7 @@ import { StoryBlockComponent } from './story-block/story-block.component';
 import { ImageBlockComponent } from './image-block/image-block.component';
 import { WelcomeComponent } from  './welcome/welcome.component';
 import { routing } from './app.routing';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { routing } from './app.routing';
     NavBarComponent,
     StoryBlockComponent,
     ImageBlockComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ArticleDetailComponent
   ],
   imports: [
     BrowserModule,
