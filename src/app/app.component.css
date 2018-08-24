@@ -1,11 +1,1 @@
-.row {
-  background-color: black;
-}
 
-.col-md-4 {
-  border: solid 1px gold;
-}
-
-.full-span {
-  background-image: linear-gradient(to right, gold, magenta);
-}
