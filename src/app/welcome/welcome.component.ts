@@ -16,8 +16,11 @@ export class WelcomeComponent implements OnInit {
   constructor(private router: Router, private articleService: ArticleService) { }
 
   ngOnInit() {
-    this.articles = this.articleService.getArticles();
-    console.log(this.articles);
+    this.articleService.getArticles().subscribe(dataLastEmittedFromObserver => {
+     this.articles = dataLastEmittedFromObserver;
+     console.log(this.articles);
+   });
+
   }
 
   goToArticlePage(clickedArticle) {
