@@ -11,12 +11,18 @@ import { ArticleService } from '../article.service';
   providers: [ArticleService]
 })
 export class ArticleDetailComponent implements OnInit {
+  articleId: string;
+  articleToDisplay: Article;
 
   constructor(private route: ActivatedRoute,
     private location: Location,
-    private albumService: ArticleService) { }
+    private articleService: ArticleService) { }
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+     this.articleId = urlParameters['id'];
+   });
+   this.articleToDisplay = this.articleService.getArticleById(this.articleId);
   }
 
 }
